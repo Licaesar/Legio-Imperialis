@@ -1,4 +1,4 @@
-##############################################
+﻿##############################################
 # LEGIO IMPERIALIS - DNA DOS FUNDADORES
 # Exportado do Ruler Designer. Cabelo e barba ajustados para templates vanilla
 # (m_hair_fp3_iranian_01, male_beard_fp2_iberian_christian_03, female_hair_fp2_iberian_christian_03)

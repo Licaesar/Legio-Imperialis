@@ -1,4 +1,4 @@
-##############################################
+﻿##############################################
 # LEGIO IMPERIALIS - BRASOES DAS CASAS FUNDADORAS
 # A chave de cada brasao e a mesma da dinastia em common/dynasties/li_dynasties.txt.
 # ATENCAO: as texturas cat_*.dds e pattern__solid_designer.dds vem de um mod de heraldica externo.

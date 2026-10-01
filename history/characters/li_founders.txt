@@ -1,4 +1,4 @@
-##############################################
+﻿##############################################
 # LEGIO IMPERIALIS - PERSONAGENS FUNDADORES (867)
 # Kensoriel Liphe inicia como aventureiro sem terra (acampamento em c_jerusalem).
 # O acampamento "Legio Imperialis" e a corte sao criados em common/on_action/li_legio_imperialis_on_actions.txt.

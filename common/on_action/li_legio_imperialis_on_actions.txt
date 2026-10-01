@@ -1,4 +1,4 @@
-##############################################
+﻿##############################################
 # LEGIO IMPERIALIS - LEGIO IMPERIALIS
 # Cria o acampamento de aventureiro sem terra de Kensoriel Liphe em Jerusalem
 # e move Helaena, os Apostolos e as esposas para a corte dele.
