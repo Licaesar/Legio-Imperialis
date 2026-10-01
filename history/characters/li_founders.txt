@@ -1,0 +1,1099 @@
+##############################################
+# LEGIO IMPERIALIS - PERSONAGENS FUNDADORES (867)
+# Kensoriel Liphe inicia como aventureiro sem terra (acampamento em c_jerusalem).
+# O acampamento "Legio Imperialis" e a corte sao criados em common/on_action/li_legio_imperialis_on_actions.txt.
+##############################################
+
+##############################################
+# NUCLEO FUNDADOR
+##############################################
+
+li_kensoriel_liphe = {
+	name = "Kensoriel"
+	dna = li_kensoriel_liphe_dna
+	dynasty = li_liphe
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+
+	trait = education_martial_4
+	trait = just
+	trait = diligent
+	trait = honest
+	trait = ambitious
+	trait = strategist
+	trait = erudite
+	trait = gallant
+	trait = pure_blooded
+	trait = intellect_good_3
+	trait = physique_good_3
+	trait = beauty_good_3
+
+	trait = organizer
+	trait = logistician
+	trait = military_engineer
+	trait = aggressive_attacker
+	trait = flexible_leader
+	trait = holy_warrior
+
+	842.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_helaena_undomiel
+		give_nickname = li_nick_omnissiah
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = 100
+			}
+			set_relation_soulmate = character:li_helaena_undomiel
+			add_character_flag = special_laamp_char
+		}
+	}
+	866.6.3 = {
+		effect = { li_founders_friendships_effect = yes }
+	}
+}
+
+li_helaena_undomiel = {
+	name = "Helaena"
+	dna = li_helaena_undomiel_dna
+	female = yes
+	dynasty = li_undomiel
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+
+	trait = education_diplomacy_5
+	trait = compassionate
+	trait = patient
+	trait = diligent
+	trait = calm
+	trait = diplomat
+	trait = theologian
+	trait = administrator
+	trait = august
+	trait = pure_blooded
+	trait = intellect_good_3
+	trait = physique_good_3
+	trait = beauty_good_3
+
+	trait = organizer
+	trait = cautious_leader
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		give_nickname = li_nick_undomiel
+	}
+}
+
+##############################################
+# OS APOSTOLOS
+##############################################
+
+# 01
+li_reid_astrea = {
+	name = "Reid"
+	dna = li_reid_astrea_dna
+	dynasty = li_astrea
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	trait = erudite
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_martial_4
+	trait = brave
+	trait = just
+	trait = honest
+	trait = gallant
+
+	trait = aggressive_attacker
+	trait = open_terrain_expert
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_aurelia_valeria
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = 100
+			}
+		}
+	}
+	866.6.2 = {
+		effect = { set_relation_soulmate = character:li_aurelia_valeria }
+	}
+}
+
+# 02
+li_ezio_auditore = {
+	name = "Ezio"
+	dna = li_ezio_auditore_dna
+	dynasty = li_auditore
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	trait = erudite
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_intrigue_5
+	trait = patient
+	trait = deceitful
+	trait = gregarious
+	trait = schemer
+
+	trait = organizer
+	trait = cautious_leader
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_lucia_claudia
+	}
+	866.6.2 = {
+		effect = { set_relation_soulmate = character:li_lucia_claudia }
+	}
+}
+
+# 03
+li_emhyr_emreis = {
+	name = "Emhyr"
+	dna = li_emhyr_emreis_dna
+	dynasty = li_emreis
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	trait = erudite
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_stewardship_5
+	trait = ambitious
+	trait = diligent
+	trait = arrogant
+	trait = administrator
+	trait = architect
+
+	trait = logistician
+	trait = organizer
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_helena_cornelia
+	}
+	866.6.2 = {
+		effect = { set_relation_soulmate = character:li_helena_cornelia }
+	}
+}
+
+# 04
+li_vistarios_granhieron = {
+	name = "Vistários"
+	dna = li_vistarios_granhieron_dna
+	dynasty = li_granhieron
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_learning_5
+	trait = temperate
+	trait = patient
+	trait = zealous
+	trait = theologian
+	trait = erudite
+
+	trait = holy_warrior
+	trait = cautious_leader
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_sophia_aemilia
+	}
+	866.6.2 = {
+		effect = { set_relation_soulmate = character:li_sophia_aemilia }
+	}
+}
+
+# 05
+li_legarde_martyr = {
+	name = "Le'garde"
+	dna = li_legarde_martyr_dna
+	dynasty = li_martyr
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	trait = erudite
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_martial_4
+	trait = zealous
+	trait = brave
+	trait = stubborn
+	trait = strategist
+	trait = gallant
+
+	trait = holy_warrior
+	trait = aggressive_attacker
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_marcella_fabia
+	}
+	866.6.2 = {
+		effect = { set_relation_soulmate = character:li_marcella_fabia }
+	}
+}
+
+# 06
+li_hrodric_gyliman = {
+	name = "Hrodric"
+	dna = li_hrodric_gyliman_dna
+	dynasty = li_ultramar
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	trait = erudite
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_diplomacy_5
+	trait = just
+	trait = diligent
+	trait = calm
+	trait = administrator
+
+	trait = organizer
+	trait = logistician
+	trait = military_engineer
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_octavia_julia
+	}
+	866.6.2 = {
+		effect = { set_relation_soulmate = character:li_octavia_julia }
+	}
+}
+
+# 07
+li_verso_lumere = {
+	name = "Verso"
+	dna = li_verso_lumere_dna
+	dynasty = li_lumere
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	trait = erudite
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_martial_4
+	trait = brave
+	trait = gregarious
+	trait = ambitious
+	trait = strategist
+	trait = gallant
+
+	trait = aggressive_attacker
+	trait = flexible_leader
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_eliana_flavia
+	}
+	866.6.2 = {
+		effect = { set_relation_soulmate = character:li_eliana_flavia }
+	}
+}
+
+# 08
+li_altair_ramashiri = {
+	name = "Altaïr"
+	dna = li_altair_ramashiri_dna
+	dynasty = li_ramashiri
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_learning_5
+	trait = patient
+	trait = cynical
+	trait = temperate
+	trait = erudite
+	trait = theologian
+
+	trait = cautious_leader
+	trait = flexible_leader
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_samira_cassia
+	}
+	866.6.2 = {
+		effect = { set_relation_soulmate = character:li_samira_cassia }
+	}
+}
+
+# 09
+li_sigvardr_drakenfyr = {
+	name = "Sigvardr"
+	dna = li_sigvardr_drakenfyr_dna
+	dynasty = li_drakenfyr
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	trait = erudite
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_martial_4
+	trait = brave
+	trait = wrathful
+	trait = stubborn
+	trait = strategist
+
+	trait = aggressive_attacker
+	trait = reaver
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_astrid_livia
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = 100
+			}
+		}
+	}
+	866.6.2 = {
+		effect = { set_relation_soulmate = character:li_astrid_livia }
+	}
+}
+
+# 10
+li_miyamoto_musashi = {
+	name = "Miyamoto"
+	dna = li_miyamoto_musashi_dna
+	dynasty = li_musashi
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	trait = erudite
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_martial_4
+	trait = brave
+	trait = patient
+	trait = callous
+	trait = strategist
+
+	trait = cautious_leader
+	trait = flexible_leader
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_akemi_domitia
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = 100
+			}
+		}
+	}
+	866.6.2 = {
+		effect = { set_relation_soulmate = character:li_akemi_domitia }
+	}
+}
+
+# 11
+li_aurelian_solerius = {
+	name = "Aurelian"
+	dna = li_aurelian_solerius_dna
+	dynasty = li_solerius
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	trait = erudite
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_martial_4
+	trait = diligent
+	trait = just
+	trait = ambitious
+	trait = strategist
+	trait = gallant
+
+	trait = organizer
+	trait = military_engineer
+	trait = flexible_leader
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_caelia_licinia
+	}
+	866.6.2 = {
+		effect = { set_relation_soulmate = character:li_caelia_licinia }
+	}
+}
+
+# 12
+li_lakan_shaokan = {
+	name = "Lakan"
+	dna = li_lakan_shaokan_dna
+	dynasty = li_shaokan
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	trait = erudite
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_stewardship_5
+	trait = patient
+	trait = ambitious
+	trait = paranoid
+	trait = administrator
+	trait = architect
+
+	trait = cautious_leader
+	trait = logistician
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_meilin_marcia
+	}
+	866.6.2 = {
+		effect = { set_relation_soulmate = character:li_meilin_marcia }
+	}
+}
+
+# 13
+li_astarinus_viriata = {
+	name = "Astarinus"
+	dna = li_astarinus_viriata_dna
+	dynasty = li_viriata
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	trait = erudite
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_martial_4
+	trait = brave
+	trait = vengeful
+	trait = generous
+	trait = strategist
+
+	trait = rough_terrain_expert
+	trait = reaver
+	trait = flexible_leader
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_aurea_sergia
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = 100
+			}
+		}
+	}
+	866.6.2 = {
+		effect = { set_relation_soulmate = character:li_aurea_sergia }
+	}
+}
+
+# 14
+li_julius_euclius = {
+	name = "Julius"
+	dna = li_julius_euclius_dna
+	dynasty = li_euclius
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	trait = erudite
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_martial_4
+	trait = honest
+	trait = just
+	trait = compassionate
+	trait = gallant
+
+	trait = unyielding_defender
+	trait = organizer
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_livia_antonia
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = 100
+			}
+		}
+	}
+	866.6.2 = {
+		effect = { set_relation_soulmate = character:li_livia_antonia }
+	}
+}
+
+# 15
+li_radahn_varakh = {
+	name = "Radahn"
+	dna = li_radahn_varakh_dna
+	dynasty = li_varakh
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	trait = erudite
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_martial_4
+	trait = brave
+	trait = wrathful
+	trait = generous
+	trait = strategist
+
+	trait = aggressive_attacker
+	trait = reckless
+	trait = open_terrain_expert
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_valeria_tullia
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = 100
+			}
+		}
+	}
+	866.6.2 = {
+		effect = { set_relation_soulmate = character:li_valeria_tullia }
+	}
+}
+
+# 16 - nao casada
+li_alia_atreides = {
+	name = "Alia"
+	dna = li_alia_atreides_dna
+	female = yes
+	dynasty = li_atreides
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_learning_5
+	trait = patient
+	trait = ambitious
+	trait = cynical
+	trait = erudite
+	trait = schemer
+
+	trait = cautious_leader
+	trait = organizer
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+}
+
+# 17
+li_elessar_telcontar = {
+	name = "Elessar"
+	dna = li_elessar_telcontar_dna
+	dynasty = li_telcontar
+	rite = roman_rite
+	culture = greek
+	sexuality = heterosexual
+	disallow_random_traits = yes
+
+	trait = fecund
+	trait = pure_blooded
+
+	trait = education_martial_4
+	trait = patient
+	trait = calm
+	trait = deceitful
+	trait = strategist
+	trait = erudite
+
+	trait = cautious_leader
+	trait = organizer
+	trait = flexible_leader
+
+	847.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	866.6.1 = {
+		add_spouse = li_minerva_octavia
+	}
+	866.6.2 = {
+		effect = { set_relation_soulmate = character:li_minerva_octavia }
+	}
+}
+
+##############################################
+# ESPOSAS DOS APOSTOLOS
+##############################################
+
+li_aurelia_valeria = {
+	name = "Aurelia"
+	female = yes
+	dynasty = li_valeria
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+	
+	trait = education_learning_4
+	trait = patient
+	trait = calm
+	trait = honest
+	trait = lifestyle_mystic
+	trait = zealous
+	trait = witch
+	trait = erudite
+	trait = fecund
+	trait = beauty_good_3
+
+	847.1.1 = { birth = yes effect = { add_character_flag = do_not_generate_starting_family } }
+}
+
+li_lucia_claudia = {
+	name = "Lucia"
+	female = yes
+	dynasty = li_claudia
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+	
+	trait = education_learning_4
+	trait = patient
+	trait = calm
+	trait = honest
+	trait = lifestyle_mystic
+	trait = zealous
+	trait = witch
+	trait = erudite
+	trait = fecund
+	trait = beauty_good_3
+
+	847.1.1 = { birth = yes effect = { add_character_flag = do_not_generate_starting_family } }
+}
+
+li_helena_cornelia = {
+	name = "Helena"
+	female = yes
+	dynasty = li_cornelia
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+	
+	trait = education_learning_4
+	trait = patient
+	trait = calm
+	trait = honest
+	trait = lifestyle_mystic
+	trait = zealous
+	trait = witch
+	trait = erudite
+	trait = fecund
+	trait = beauty_good_3
+
+	847.1.1 = { birth = yes effect = { add_character_flag = do_not_generate_starting_family } }
+}
+
+li_sophia_aemilia = {
+	name = "Sophia"
+	female = yes
+	dynasty = li_aemilia
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+	
+	trait = education_learning_4
+	trait = patient
+	trait = calm
+	trait = honest
+	trait = lifestyle_mystic
+	trait = zealous
+	trait = witch
+	trait = erudite
+	trait = fecund
+	trait = beauty_good_3
+
+	847.1.1 = { birth = yes effect = { add_character_flag = do_not_generate_starting_family } }
+}
+
+li_marcella_fabia = {
+	name = "Marcella"
+	female = yes
+	dynasty = li_fabia
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+	
+	trait = education_learning_4
+	trait = patient
+	trait = calm
+	trait = honest
+	trait = lifestyle_mystic
+	trait = zealous
+	trait = witch
+	trait = erudite
+	trait = fecund
+	trait = beauty_good_3
+
+	847.1.1 = { birth = yes effect = { add_character_flag = do_not_generate_starting_family } }
+}
+
+li_octavia_julia = {
+	name = "Octavia"
+	female = yes
+	dynasty = li_julia
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+	
+	trait = education_learning_4
+	trait = patient
+	trait = calm
+	trait = honest
+	trait = lifestyle_mystic
+	trait = zealous
+	trait = witch
+	trait = erudite
+	trait = fecund
+	trait = beauty_good_3
+
+	847.1.1 = { birth = yes effect = { add_character_flag = do_not_generate_starting_family } }
+}
+
+li_eliana_flavia = {
+	name = "Eliana"
+	female = yes
+	dynasty = li_flavia
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+	
+	trait = education_learning_4
+	trait = patient
+	trait = calm
+	trait = honest
+	trait = lifestyle_mystic
+	trait = zealous
+	trait = witch
+	trait = erudite
+	trait = fecund
+	trait = beauty_good_3
+
+	847.1.1 = { birth = yes effect = { add_character_flag = do_not_generate_starting_family } }
+}
+
+li_samira_cassia = {
+	name = "Samira"
+	female = yes
+	dynasty = li_cassia
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+	
+	trait = education_learning_4
+	trait = patient
+	trait = calm
+	trait = honest
+	trait = lifestyle_mystic
+	trait = zealous
+	trait = witch
+	trait = erudite
+	trait = fecund
+	trait = beauty_good_3
+
+	847.1.1 = { birth = yes effect = { add_character_flag = do_not_generate_starting_family } }
+}
+
+li_astrid_livia = {
+	name = "Astrid"
+	female = yes
+	dynasty = li_livia
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+	
+	trait = education_learning_4
+	trait = patient
+	trait = calm
+	trait = honest
+	trait = lifestyle_mystic
+	trait = zealous
+	trait = witch
+	trait = erudite
+	trait = fecund
+	trait = beauty_good_3
+
+	847.1.1 = { birth = yes effect = { add_character_flag = do_not_generate_starting_family } }
+}
+
+li_akemi_domitia = {
+	name = "Akemi"
+	female = yes
+	dynasty = li_domitia
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+	
+	trait = education_learning_4
+	trait = patient
+	trait = calm
+	trait = honest
+	trait = lifestyle_mystic
+	trait = zealous
+	trait = witch
+	trait = erudite
+	trait = fecund
+	trait = beauty_good_3
+
+	847.1.1 = { birth = yes effect = { add_character_flag = do_not_generate_starting_family } }
+}
+
+li_caelia_licinia = {
+	name = "Caelia"
+	female = yes
+	dynasty = li_licinia
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+	
+	trait = education_learning_4
+	trait = patient
+	trait = calm
+	trait = honest
+	trait = lifestyle_mystic
+	trait = zealous
+	trait = witch
+	trait = erudite
+	trait = fecund
+	trait = beauty_good_3
+
+	847.1.1 = { birth = yes effect = { add_character_flag = do_not_generate_starting_family } }
+}
+
+li_meilin_marcia = {
+	name = "Meilin"
+	female = yes
+	dynasty = li_marcia
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+	
+	trait = education_learning_4
+	trait = patient
+	trait = calm
+	trait = honest
+	trait = lifestyle_mystic
+	trait = zealous
+	trait = witch
+	trait = erudite
+	trait = fecund
+	trait = beauty_good_3
+
+	847.1.1 = { birth = yes effect = { add_character_flag = do_not_generate_starting_family } }
+}
+
+li_aurea_sergia = {
+	name = "Aurea"
+	female = yes
+	dynasty = li_sergia
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+	
+	trait = education_learning_4
+	trait = patient
+	trait = calm
+	trait = honest
+	trait = lifestyle_mystic
+	trait = zealous
+	trait = witch
+	trait = erudite
+	trait = fecund
+	trait = beauty_good_3
+
+	847.1.1 = { birth = yes effect = { add_character_flag = do_not_generate_starting_family } }
+}
+
+li_livia_antonia = {
+	name = "Livia"
+	female = yes
+	dynasty = li_antonia
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+	
+	trait = education_learning_4
+	trait = patient
+	trait = calm
+	trait = honest
+	trait = lifestyle_mystic
+	trait = zealous
+	trait = witch
+	trait = erudite
+	trait = fecund
+	trait = beauty_good_3
+
+	847.1.1 = { birth = yes effect = { add_character_flag = do_not_generate_starting_family } }
+}
+
+li_valeria_tullia = {
+	name = "Valeria"
+	female = yes
+	dynasty = li_tullia
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+	
+	trait = education_learning_4
+	trait = patient
+	trait = calm
+	trait = honest
+	trait = lifestyle_mystic
+	trait = zealous
+	trait = witch
+	trait = erudite
+	trait = fecund
+	trait = beauty_good_3
+
+	847.1.1 = { birth = yes effect = { add_character_flag = do_not_generate_starting_family } }
+}
+
+li_minerva_octavia = {
+	name = "Minerva"
+	female = yes
+	dynasty = li_octavia
+	rite = roman_rite
+	culture = greek
+	disallow_random_traits = yes
+	
+	trait = education_learning_4
+	trait = patient
+	trait = calm
+	trait = honest
+	trait = lifestyle_mystic
+	trait = zealous
+	trait = witch
+	trait = erudite
+	trait = fecund
+	trait = beauty_good_3
+
+	847.1.1 = { birth = yes effect = { add_character_flag = do_not_generate_starting_family } }
+}

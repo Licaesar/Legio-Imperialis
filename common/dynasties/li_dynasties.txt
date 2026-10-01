@@ -1,0 +1,209 @@
+# Cultus Imperialis - Casas Fundadoras e casas das esposas (867)
+# Sem coat of arms definido: o jogo gera um brasao aleatorio.
+# Para fixar o brasao, crie em common/coat_of_arms/coat_of_arms uma entrada com a mesma chave (ex.: li_liphe = { ... }).
+
+############################
+# Nucleo Fundador
+############################
+
+li_liphe = {
+	name = "dynn_li_liphe"
+	culture = "greek"
+	motto = dynn_li_liphe_motto
+}
+
+li_undomiel = {
+	name = "dynn_li_undomiel"
+	culture = "greek"
+	motto = dynn_li_undomiel_motto
+}
+
+############################
+# Casas dos Apostolos
+############################
+
+li_astrea = {
+	name = "dynn_li_astrea"
+	culture = "greek"
+	motto = dynn_li_astrea_motto
+}
+
+li_auditore = {
+	name = "dynn_li_auditore"
+	culture = "greek"
+	motto = dynn_li_auditore_motto
+}
+
+li_emreis = {
+	name = "dynn_li_emreis"
+	culture = "greek"
+	motto = dynn_li_emreis_motto
+}
+
+li_granhieron = {
+	name = "dynn_li_granhieron"
+	culture = "greek"
+	motto = dynn_li_granhieron_motto
+}
+
+li_martyr = {
+	name = "dynn_li_martyr"
+	culture = "greek"
+	motto = dynn_li_martyr_motto
+}
+
+li_ultramar = {
+	name = "dynn_li_ultramar"
+	culture = "greek"
+	motto = dynn_li_ultramar_motto
+}
+
+li_lumere = {
+	name = "dynn_li_lumere"
+	culture = "greek"
+	motto = dynn_li_lumere_motto
+}
+
+li_ramashiri = {
+	name = "dynn_li_ramashiri"
+	culture = "greek"
+	motto = dynn_li_ramashiri_motto
+}
+
+li_drakenfyr = {
+	name = "dynn_li_drakenfyr"
+	culture = "greek"
+	motto = dynn_li_drakenfyr_motto
+}
+
+li_musashi = {
+	name = "dynn_li_musashi"
+	culture = "greek"
+	motto = dynn_li_musashi_motto
+}
+
+li_solerius = {
+	name = "dynn_li_solerius"
+	culture = "greek"
+	motto = dynn_li_solerius_motto
+}
+
+li_shaokan = {
+	name = "dynn_li_shaokan"
+	culture = "greek"
+	motto = dynn_li_shaokan_motto
+}
+
+li_viriata = {
+	name = "dynn_li_viriata"
+	culture = "greek"
+	motto = dynn_li_viriata_motto
+}
+
+li_euclius = {
+	name = "dynn_li_euclius"
+	culture = "greek"
+	motto = dynn_li_euclius_motto
+}
+
+li_varakh = {
+	name = "dynn_li_varakh"
+	culture = "greek"
+	motto = dynn_li_varakh_motto
+}
+
+li_atreides = {
+	name = "dynn_li_atreides"
+	culture = "greek"
+	motto = dynn_li_atreides_motto
+}
+
+li_telcontar = {
+	name = "dynn_li_telcontar"
+	culture = "greek"
+	motto = dynn_li_telcontar_motto
+}
+
+############################
+# Casas das esposas
+############################
+
+li_valeria = {
+	name = "dynn_li_valeria"
+	culture = "greek"
+}
+
+li_claudia = {
+	name = "dynn_li_claudia"
+	culture = "greek"
+}
+
+li_cornelia = {
+	name = "dynn_li_cornelia"
+	culture = "greek"
+}
+
+li_aemilia = {
+	name = "dynn_li_aemilia"
+	culture = "greek"
+}
+
+li_fabia = {
+	name = "dynn_li_fabia"
+	culture = "greek"
+}
+
+li_julia = {
+	name = "dynn_li_julia"
+	culture = "greek"
+}
+
+li_flavia = {
+	name = "dynn_li_flavia"
+	culture = "greek"
+}
+
+li_cassia = {
+	name = "dynn_li_cassia"
+	culture = "greek"
+}
+
+li_livia = {
+	name = "dynn_li_livia"
+	culture = "greek"
+}
+
+li_domitia = {
+	name = "dynn_li_domitia"
+	culture = "greek"
+}
+
+li_licinia = {
+	name = "dynn_li_licinia"
+	culture = "greek"
+}
+
+li_marcia = {
+	name = "dynn_li_marcia"
+	culture = "greek"
+}
+
+li_sergia = {
+	name = "dynn_li_sergia"
+	culture = "greek"
+}
+
+li_antonia = {
+	name = "dynn_li_antonia"
+	culture = "greek"
+}
+
+li_tullia = {
+	name = "dynn_li_tullia"
+	culture = "greek"
+}
+
+li_octavia = {
+	name = "dynn_li_octavia"
+	culture = "greek"
+}

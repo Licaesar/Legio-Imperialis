@@ -1,0 +1,70 @@
+##############################################
+# LEGIO IMPERIALIS - LEGIO IMPERIALIS
+# Cria o acampamento de aventureiro sem terra de Kensoriel Liphe em Jerusalem
+# e move Helaena, os Apostolos e as esposas para a corte dele.
+# Feito por script porque o historico nao permite "employer" para personagem sem terra.
+##############################################
+
+# Antes do lobby: cria o acampamento para ele ja aparecer na selecao de personagem.
+on_game_start = {
+	on_actions = { li_on_game_start_legio_imperialis }
+}
+
+# O vanilla 1.20 (game_start.txt, EP3 LAAMP SETUP) limpa cortesaos sem vinculos
+# de dinastia, familia ou relacoes importantes com o lider. Reunimos os fundadores
+# neste hook e no dia seguinte para recuperar integrantes apos a limpeza vanilla.
+# O efeito e idempotente; a repeticao imediata nao pressupoe ordem contra o vanilla.
+on_game_start_after_lobby = {
+	on_actions = {
+		li_on_game_start_after_lobby_legio_imperialis
+		delay = { days = 1 }
+		li_on_game_start_after_lobby_legio_imperialis
+	}
+}
+
+li_on_game_start_legio_imperialis = {
+	effect = {
+		character:li_kensoriel_liphe ?= {
+			if = {
+				limit = {
+					is_alive = yes
+					is_ruler = no
+					has_dlc_feature = roads_to_power
+				}
+				save_scope_as = new_landless_adventurer
+
+				# Coloca Kensoriel em Jerusalem antes de criar o acampamento
+				move_to_pool_at = province:5965 # c_jerusalem
+
+				# Titulo do acampamento
+				create_adventurer_title = {
+					name = li_legio_imperialis
+					holder = scope:new_landless_adventurer
+					article = li_legio_imperialis_article
+					save_scope_as = li_legio_imperialis_title
+				}
+				if = {
+					limit = { NOT = { has_government = landless_adventurer_government } }
+					change_government = landless_adventurer_government
+				}
+				if = {
+					limit = { NOT = { has_realm_law = landless_adventurer_succession_law } }
+					add_realm_law = landless_adventurer_succession_law
+				}
+
+				# Acampamento em c_jerusalem
+				domicile ?= {
+					move_domicile = province:5965
+					change_provisions = starting_provisions_value
+				}
+			}
+		}
+		li_legio_imperialis_gather_effect = yes
+	}
+}
+
+li_on_game_start_after_lobby_legio_imperialis = {
+	effect = {
+		li_legio_imperialis_gather_effect = yes
+	}
+}

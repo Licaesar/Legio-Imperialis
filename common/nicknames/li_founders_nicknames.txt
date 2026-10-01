@@ -1,0 +1,3 @@
+# Apelidos dos fundadores; nenhum sistema religioso customizado.
+li_nick_omnissiah = {}
+li_nick_undomiel = {}

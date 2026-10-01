@@ -1,0 +1,109 @@
+##############################################
+# LEGIO IMPERIALIS - LEGIO IMPERIALIS
+##############################################
+
+# Coloca Helaena, os Apostolos e as esposas na corte de Kensoriel.
+# Idempotente: quem ja e cortesao dele e ignorado.
+li_legio_imperialis_gather_effect = {
+	character:li_kensoriel_liphe ?= {
+		if = {
+			limit = {
+				is_alive = yes
+				has_government = landless_adventurer_government
+			}
+			save_scope_as = li_legio_leader
+
+			character:li_helaena_undomiel ?= { add_to_list = li_legio_members }
+			character:li_reid_astrea ?= { add_to_list = li_legio_members }
+			character:li_ezio_auditore ?= { add_to_list = li_legio_members }
+			character:li_emhyr_emreis ?= { add_to_list = li_legio_members }
+			character:li_vistarios_granhieron ?= { add_to_list = li_legio_members }
+			character:li_legarde_martyr ?= { add_to_list = li_legio_members }
+			character:li_hrodric_gyliman ?= { add_to_list = li_legio_members }
+			character:li_verso_lumere ?= { add_to_list = li_legio_members }
+			character:li_altair_ramashiri ?= { add_to_list = li_legio_members }
+			character:li_sigvardr_drakenfyr ?= { add_to_list = li_legio_members }
+			character:li_miyamoto_musashi ?= { add_to_list = li_legio_members }
+			character:li_aurelian_solerius ?= { add_to_list = li_legio_members }
+			character:li_lakan_shaokan ?= { add_to_list = li_legio_members }
+			character:li_astarinus_viriata ?= { add_to_list = li_legio_members }
+			character:li_julius_euclius ?= { add_to_list = li_legio_members }
+			character:li_radahn_varakh ?= { add_to_list = li_legio_members }
+			character:li_alia_atreides ?= { add_to_list = li_legio_members }
+			character:li_elessar_telcontar ?= { add_to_list = li_legio_members }
+			character:li_aurelia_valeria ?= { add_to_list = li_legio_members }
+			character:li_lucia_claudia ?= { add_to_list = li_legio_members }
+			character:li_helena_cornelia ?= { add_to_list = li_legio_members }
+			character:li_sophia_aemilia ?= { add_to_list = li_legio_members }
+			character:li_marcella_fabia ?= { add_to_list = li_legio_members }
+			character:li_octavia_julia ?= { add_to_list = li_legio_members }
+			character:li_eliana_flavia ?= { add_to_list = li_legio_members }
+			character:li_samira_cassia ?= { add_to_list = li_legio_members }
+			character:li_astrid_livia ?= { add_to_list = li_legio_members }
+			character:li_akemi_domitia ?= { add_to_list = li_legio_members }
+			character:li_caelia_licinia ?= { add_to_list = li_legio_members }
+			character:li_meilin_marcia ?= { add_to_list = li_legio_members }
+			character:li_aurea_sergia ?= { add_to_list = li_legio_members }
+			character:li_livia_antonia ?= { add_to_list = li_legio_members }
+			character:li_valeria_tullia ?= { add_to_list = li_legio_members }
+			character:li_minerva_octavia ?= { add_to_list = li_legio_members }
+
+			every_in_list = {
+				list = li_legio_members
+				limit = {
+					is_alive = yes
+					is_ruler = no
+					NOT = { is_courtier_of = scope:li_legio_leader }
+				}
+				scope:li_legio_leader = { add_courtier = prev }
+			}
+		}
+	}
+}
+
+# Amizades dos fundadores (chamado no historico de Kensoriel):
+# cada Apostolo e amigo de Kensoriel, de Helaena e de todos os outros Apostolos.
+li_founders_friendships_effect = {
+	character:li_reid_astrea ?= { add_to_list = li_apostoli }
+	character:li_ezio_auditore ?= { add_to_list = li_apostoli }
+	character:li_emhyr_emreis ?= { add_to_list = li_apostoli }
+	character:li_vistarios_granhieron ?= { add_to_list = li_apostoli }
+	character:li_legarde_martyr ?= { add_to_list = li_apostoli }
+	character:li_hrodric_gyliman ?= { add_to_list = li_apostoli }
+	character:li_verso_lumere ?= { add_to_list = li_apostoli }
+	character:li_altair_ramashiri ?= { add_to_list = li_apostoli }
+	character:li_sigvardr_drakenfyr ?= { add_to_list = li_apostoli }
+	character:li_miyamoto_musashi ?= { add_to_list = li_apostoli }
+	character:li_aurelian_solerius ?= { add_to_list = li_apostoli }
+	character:li_lakan_shaokan ?= { add_to_list = li_apostoli }
+	character:li_astarinus_viriata ?= { add_to_list = li_apostoli }
+	character:li_julius_euclius ?= { add_to_list = li_apostoli }
+	character:li_radahn_varakh ?= { add_to_list = li_apostoli }
+	character:li_alia_atreides ?= { add_to_list = li_apostoli }
+	character:li_elessar_telcontar ?= { add_to_list = li_apostoli }
+
+	every_in_list = {
+		list = li_apostoli
+		save_scope_as = li_apostle
+		character:li_kensoriel_liphe ?= {
+			if = {
+				limit = { NOT = { has_relation_friend = scope:li_apostle } }
+				set_relation_friend = { reason = friend_generic_history target = scope:li_apostle }
+			}
+		}
+		character:li_helaena_undomiel ?= {
+			if = {
+				limit = { NOT = { has_relation_friend = scope:li_apostle } }
+				set_relation_friend = { reason = friend_generic_history target = scope:li_apostle }
+			}
+		}
+		every_in_list = {
+			list = li_apostoli
+			limit = {
+				NOT = { this = scope:li_apostle }
+				NOT = { has_relation_friend = scope:li_apostle }
+			}
+			set_relation_friend = { reason = friend_generic_history target = scope:li_apostle }
+		}
+	}
+}
