@@ -748,6 +748,7 @@ li_elessar_telcontar = {
 
 li_aurelia_valeria = {
 	name = "Aurelia"
+	dna = li_aurelia_valeria_dna
 	female = yes
 	dynasty = li_valeria
 	rite = roman_rite
@@ -769,6 +770,7 @@ li_aurelia_valeria = {
 
 li_lucia_claudia = {
 	name = "Lucia"
+	dna = li_lucia_claudia_dna
 	female = yes
 	dynasty = li_claudia
 	rite = roman_rite
@@ -790,6 +792,7 @@ li_lucia_claudia = {
 
 li_helena_cornelia = {
 	name = "Helena"
+	dna = li_helena_cornelia_dna
 	female = yes
 	dynasty = li_cornelia
 	rite = roman_rite
@@ -811,6 +814,7 @@ li_helena_cornelia = {
 
 li_sophia_aemilia = {
 	name = "Sophia"
+	dna = li_sophia_aemilia_dna
 	female = yes
 	dynasty = li_aemilia
 	rite = roman_rite
@@ -832,6 +836,7 @@ li_sophia_aemilia = {
 
 li_marcella_fabia = {
 	name = "Marcella"
+	dna = li_marcella_fabia_dna
 	female = yes
 	dynasty = li_fabia
 	rite = roman_rite
@@ -853,6 +858,7 @@ li_marcella_fabia = {
 
 li_octavia_julia = {
 	name = "Octavia"
+	dna = li_octavia_julia_dna
 	female = yes
 	dynasty = li_julia
 	rite = roman_rite
@@ -874,6 +880,7 @@ li_octavia_julia = {
 
 li_eliana_flavia = {
 	name = "Eliana"
+	dna = li_eliana_flavia_dna
 	female = yes
 	dynasty = li_flavia
 	rite = roman_rite
@@ -895,6 +902,7 @@ li_eliana_flavia = {
 
 li_samira_cassia = {
 	name = "Samira"
+	dna = li_samira_cassia_dna
 	female = yes
 	dynasty = li_cassia
 	rite = roman_rite
@@ -916,6 +924,7 @@ li_samira_cassia = {
 
 li_astrid_livia = {
 	name = "Astrid"
+	dna = li_astrid_livia_dna
 	female = yes
 	dynasty = li_livia
 	rite = roman_rite
@@ -937,6 +946,7 @@ li_astrid_livia = {
 
 li_akemi_domitia = {
 	name = "Akemi"
+	dna = li_akemi_domitia_dna
 	female = yes
 	dynasty = li_domitia
 	rite = roman_rite
@@ -958,6 +968,7 @@ li_akemi_domitia = {
 
 li_caelia_licinia = {
 	name = "Caelia"
+	dna = li_caelia_licinia_dna
 	female = yes
 	dynasty = li_licinia
 	rite = roman_rite
@@ -979,6 +990,7 @@ li_caelia_licinia = {
 
 li_meilin_marcia = {
 	name = "Meilin"
+	dna = li_meilin_marcia_dna
 	female = yes
 	dynasty = li_marcia
 	rite = roman_rite
@@ -1000,6 +1012,7 @@ li_meilin_marcia = {
 
 li_aurea_sergia = {
 	name = "Aurea"
+	dna = li_aurea_sergia_dna
 	female = yes
 	dynasty = li_sergia
 	rite = roman_rite
@@ -1021,6 +1034,7 @@ li_aurea_sergia = {
 
 li_livia_antonia = {
 	name = "Livia"
+	dna = li_livia_antonia_dna
 	female = yes
 	dynasty = li_antonia
 	rite = roman_rite
@@ -1042,6 +1056,7 @@ li_livia_antonia = {
 
 li_valeria_tullia = {
 	name = "Valeria"
+	dna = li_valeria_tullia_dna
 	female = yes
 	dynasty = li_tullia
 	rite = roman_rite
@@ -1063,6 +1078,7 @@ li_valeria_tullia = {
 
 li_minerva_octavia = {
 	name = "Minerva"
+	dna = li_minerva_octavia_dna
 	female = yes
 	dynasty = li_octavia
 	rite = roman_rite
