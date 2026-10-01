@@ -120,6 +120,8 @@ li_reid_astrea = {
 	trait = just
 	trait = honest
 	trait = gallant
+	trait = physique_good_3
+	trait = beauty_good_3
 
 	trait = aggressive_attacker
 	trait = open_terrain_expert
@@ -162,6 +164,8 @@ li_ezio_auditore = {
 	trait = deceitful
 	trait = gregarious
 	trait = schemer
+	trait = physique_good_3
+	trait = beauty_good_3
 
 	trait = organizer
 	trait = cautious_leader
@@ -198,6 +202,7 @@ li_emhyr_emreis = {
 	trait = arrogant
 	trait = administrator
 	trait = architect
+	trait = beauty_good_3
 
 	trait = logistician
 	trait = organizer
@@ -233,6 +238,7 @@ li_vistarios_granhieron = {
 	trait = zealous
 	trait = theologian
 	trait = erudite
+	trait = beauty_good_3
 
 	trait = holy_warrior
 	trait = cautious_leader
@@ -269,6 +275,7 @@ li_legarde_martyr = {
 	trait = stubborn
 	trait = strategist
 	trait = gallant
+	trait = beauty_good_3
 
 	trait = holy_warrior
 	trait = aggressive_attacker
@@ -304,6 +311,7 @@ li_hrodric_gyliman = {
 	trait = diligent
 	trait = calm
 	trait = administrator
+	trait = beauty_good_3
 
 	trait = organizer
 	trait = logistician
@@ -341,6 +349,7 @@ li_verso_lumere = {
 	trait = ambitious
 	trait = strategist
 	trait = gallant
+	trait = beauty_good_3
 
 	trait = aggressive_attacker
 	trait = flexible_leader
@@ -376,6 +385,7 @@ li_altair_ramashiri = {
 	trait = temperate
 	trait = erudite
 	trait = theologian
+	trait = beauty_good_3
 
 	trait = cautious_leader
 	trait = flexible_leader
@@ -411,6 +421,7 @@ li_sigvardr_drakenfyr = {
 	trait = wrathful
 	trait = stubborn
 	trait = strategist
+	trait = beauty_good_3
 
 	trait = aggressive_attacker
 	trait = reaver
@@ -453,6 +464,7 @@ li_miyamoto_musashi = {
 	trait = patient
 	trait = callous
 	trait = strategist
+	trait = beauty_good_3
 
 	trait = cautious_leader
 	trait = flexible_leader
@@ -496,6 +508,7 @@ li_aurelian_solerius = {
 	trait = ambitious
 	trait = strategist
 	trait = gallant
+	trait = beauty_good_3
 
 	trait = organizer
 	trait = military_engineer
@@ -533,6 +546,7 @@ li_lakan_shaokan = {
 	trait = paranoid
 	trait = administrator
 	trait = architect
+	trait = beauty_good_3
 
 	trait = cautious_leader
 	trait = logistician
@@ -568,6 +582,7 @@ li_astarinus_viriata = {
 	trait = vengeful
 	trait = generous
 	trait = strategist
+	trait = beauty_good_3
 
 	trait = rough_terrain_expert
 	trait = reaver
@@ -611,6 +626,7 @@ li_julius_euclius = {
 	trait = just
 	trait = compassionate
 	trait = gallant
+	trait = beauty_good_3
 
 	trait = unyielding_defender
 	trait = organizer
@@ -653,6 +669,7 @@ li_radahn_varakh = {
 	trait = wrathful
 	trait = generous
 	trait = strategist
+	trait = beauty_good_3
 
 	trait = aggressive_attacker
 	trait = reckless
@@ -696,6 +713,7 @@ li_alia_atreides = {
 	trait = cynical
 	trait = erudite
 	trait = schemer
+	trait = beauty_good_3
 
 	trait = cautious_leader
 	trait = organizer
@@ -725,6 +743,7 @@ li_elessar_telcontar = {
 	trait = deceitful
 	trait = strategist
 	trait = erudite
+	trait = beauty_good_3
 
 	trait = cautious_leader
 	trait = organizer
