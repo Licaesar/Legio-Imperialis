@@ -2,7 +2,7 @@
 
 Mod de Crusader Kings III, prefixo `li_`, alvo 1.20.x. Início em 867 com Kensoriel Liphe como aventureiro em Jerusalém, o acampamento Legio Imperialis e o elenco de 35 fundadores, só com conteúdo vanilla. Está parado: cumpriu o papel de banco de testes e serve de base futura para Total Conversions.
 
-Design aprovado: `Meus Mods CK3\docs\superpowers\specs\2026-09-30-legio-imperialis-design.md`. Notas de desenvolvimento, testes e relatórios: `Meus Mods CK3\Legio Imperialis\` (`README.md` traz o checklist de jogo).
+**Leia primeiro:** `Meus Mods CK3\Legio Imperialis\ESTADO - Legio.md` (estado atual e onde está cada coisa). Testes, validação e roteiro de playtest ficam em `Meus Mods CK3\Legio Imperialis\`; spec e plano aprovados, em `arquivo\superpowers\` dessa pasta.
 
 ## Caminhos
 
