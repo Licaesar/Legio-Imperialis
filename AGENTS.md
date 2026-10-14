@@ -22,6 +22,10 @@ Mod de Crusader Kings III, prefixo `li_`, alvo 1.20.x. Início em 867 com Kensor
 - O mod é independente do Cultus Imperialis e nunca roda junto com ele. Os arquivos originais do Imperialis e do Workshop são somente leitura.
 - UTF-8 **com BOM** em `.txt` e `.yml`; `descriptor.mod` sem BOM.
 
+## Skills e Tiger
+
+Todo trabalho no mod usa as skills instaladas no PC do autor: `ck3-modding` (script, histórico, localização), `ck3-gui` (interface) e `ck3-playtest` (playtest e logs). Toda mudança passa pelo Tiger com patch 1.20 (`C:\Tools\tiger-src\target\release\ck3-tiger.exe`) antes do commit. Numa sessão sem as skills ou sem a pasta do jogo (nuvem), diga isso ao autor e marque o Tiger como pendente no PC.
+
 ## Git e validação
 
 - Remoto `origin` = github.com/Licaesar/Legio-Imperialis. Trabalho numa branch a partir da `main`, push da branch liberado; a `main` muda só por PR que o autor mescla.
