@@ -11,7 +11,7 @@ Mod de Crusader Kings III, prefixo `li_`, alvo 1.20.x. Início em 867 com Kensor
 | Mod (este repositório) | `C:\Users\rique\Documents\Paradox Interactive\Crusader Kings III\mod\LegioImperialis`, descritor `...\mod\LegioImperialis.mod` |
 | Jogo | `H:\SteamLibrary\steamapps\common\Crusader Kings III` |
 | Logs | `C:\Users\rique\Documents\Paradox Interactive\Crusader Kings III\logs` |
-| Docs e ferramentas | `C:\Users\rique\Documents\Workspace\Meus Mods CK3`; nas sessões na nuvem, `/mnt/project-files/Meus Mods CK3` |
+| Docs e ferramentas | `C:\Users\rique\Documents\Workspace\Meus Mods CK3`; repositório privado `Licaesar/Meus-Mods-CK3`, clonado também nas sessões na nuvem |
 
 ## Regras do conteúdo
 
