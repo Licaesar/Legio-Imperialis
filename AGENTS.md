@@ -24,7 +24,9 @@ Mod de Crusader Kings III, prefixo `li_`, alvo 1.20.x. Início em 867 com Kensor
 
 ## Skills e Tiger
 
-Todo trabalho no mod usa as skills instaladas no PC do autor: `ck3-modding` (script, histórico, localização), `ck3-gui` (interface) e `ck3-playtest` (playtest e logs). Toda mudança passa pelo Tiger com patch 1.20 (`C:\Tools\tiger-src\target\release\ck3-tiger.exe`) antes do commit. Numa sessão sem as skills ou sem a pasta do jogo (nuvem), diga isso ao autor e marque o Tiger como pendente no PC.
+Todo trabalho no mod usa as skills do perfil do autor: `ck3-modding` (script, histórico, localização), `ck3-gui` (interface) e `ck3-playtest` (playtest e logs). Elas valem no PC e na nuvem (lá aparecem como `anthropic-skills:ck3-modding` e assim por diante; use o nome que a lista de skills da sessão mostrar) e trazem o método geral; este arquivo traz só o que é do Legio.
+
+Toda mudança passa pelo Tiger com patch 1.20 (`C:\Tools\tiger-src\target\release\ck3-tiger.exe --no-color "<...>\mod\LegioImperialis.mod"`) antes do commit. Ele precisa da pasta do jogo e roda no PC: numa sessão na nuvem, rode-o por Remote Control no PC do autor quando ele permitir; sem essa rodada, marque o Tiger como pendente no PC.
 
 ## Git e validação
 
