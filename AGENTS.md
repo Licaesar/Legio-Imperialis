@@ -22,6 +22,10 @@ Mod de Crusader Kings III, prefixo `li_`, alvo 1.20.x. Início em 867 com Kensor
 - O mod é independente do Cultus Imperialis e nunca roda junto com ele. Os arquivos originais do Imperialis e do Workshop são somente leitura.
 - UTF-8 **com BOM** em `.txt` e `.yml`; `descriptor.mod` sem BOM.
 
+## Onde roda cada tarefa
+
+Decisão do autor (15/10/2026): **PC primeiro**. Tarefa que precisa do jogo, do Tiger, de logs ou saves roda numa thread do projeto no PC (Remote Control); lore, documentação e planejamento podem rodar na nuvem; playtest ao vivo, no Claude Code direto no PC. A memória do mod fica no git (este arquivo e o `ESTADO - Legio.md` no `Meus-Mods-CK3`), igual para PC e nuvem.
+
 ## Skills e Tiger
 
 Todo trabalho no mod usa as skills do perfil do autor: `ck3-modding` (script, histórico, localização), `ck3-gui` (interface) e `ck3-playtest` (playtest e logs). Elas valem no PC e na nuvem (lá aparecem como `anthropic-skills:ck3-modding` e assim por diante; use o nome que a lista de skills da sessão mostrar) e trazem o método geral; este arquivo traz só o que é do Legio.
