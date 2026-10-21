@@ -1,8 +1,7 @@
 ﻿##############################################
 # LEGIO IMPERIALIS - BRASOES DAS CASAS FUNDADORAS
 # A chave de cada brasao e a mesma da dinastia em common/dynasties/li_dynasties.txt.
-# ATENCAO: as texturas cat_*.dds e pattern__solid_designer.dds vem de um mod de heraldica externo.
-# Sem esse mod carregado, esses elementos nao aparecem.
+# Os emblemas li_cat_* sao copias do Cat's Coat of Arms dentro do mod (11/10/2026); pattern__solid_designer.dds e do vanilla.
 ##############################################
 
 # Casa Liphe
@@ -14,7 +13,7 @@ li_liphe = {
 	colored_emblem = {
 		color1 = white
 		color2 = rgb { 47 2 2 }
-		texture = "cat_crown5.dds"
+		texture = "li_cat_crown5.dds"
 		instance = {
 			position = { 0.500000 0.140000 }
 			scale = { 0.340000 0.340000 }
@@ -23,7 +22,7 @@ li_liphe = {
 	colored_emblem = {
 		color1 = white
 		color2 = black
-		texture = "cat_sun_macedonia.dds"
+		texture = "li_cat_sun_macedonia.dds"
 		instance = {
 			position = { 0.500000 0.450000 }
 			scale = { 0.600000 0.600000 }
@@ -33,10 +32,26 @@ li_liphe = {
 	colored_emblem = {
 		color1 = white
 		color2 = white
-		texture = "cat_laurel_wreath12.dds"
+		texture = "li_cat_laurel_wreath12.dds"
 		instance = {
 			position = { 0.500000 0.530000 }
 			depth = 2.010000
+		}
+	}
+}
+
+# Casa Undomiel (12/10/2026): a dinastia ficou sem membros quando a Helaena passou a Liphe (03/10/2026), mas sem brasao o jogo avisa no
+# log. A estrela da tarde (Undomiel, "Evenstar") em prata sobre azul-noite. Criado pelo Claude.
+li_undomiel = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 18 22 52 }
+	color2 = rgb { 18 22 52 }
+	colored_emblem = {
+		color1 = rgb { 220 224 235 }
+		texture = "ce_star_16.dds"
+		instance = {
+			position = { 0.500000 0.450000 }
+			scale = { 0.700000 0.700000 }
 		}
 	}
 }

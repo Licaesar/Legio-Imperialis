@@ -1,0 +1,22 @@
+﻿# Emblemas do Cat's Coat of Arms (Workshop 3339393423) e do mod de heraldica LC13 (Workshop 3446329162), copiados
+# do Cultus Imperialis para o Legio funcionar sem mods de heraldica. Prefixo li_ para nao colidir com os originais.
+li_cat_armenia_artaxiad_eagle.dds = { colors = 3 category = animals }
+li_cat_book3.dds = { colors = 3 category = manmade }
+li_cat_crown5.dds = { colors = 3 category = manmade }
+li_cat_crown_pearl.dds = { colors = 3 category = manmade }
+li_cat_double_headed_eagle4_wappen.dds = { colors = 3 category = animals }
+li_cat_eagle_rus_crown.dds = { colors = 3 category = animals }
+li_cat_jesuit_sun.dds = { colors = 3 category = faiths }
+li_cat_kr_gyeongju_kim_clan.dds = { colors = 3 category = abstract }
+li_cat_laurel_wreath12.dds = { colors = 3 category = nature }
+li_cat_letter_omega.dds = { colors = 3 category = writing }
+li_cat_nigeria_sun.dds = { colors = 3 category = nature }
+li_cat_nintendo_zelda.dds = { colors = 3 category = abstract }
+li_cat_palaiologos_letter.dds = { colors = 3 category = writing }
+li_cat_pontic_eagle.dds = { colors = 3 category = animals }
+li_cat_roman_eagle2_totalwar.dds = { colors = 3 category = animals }
+li_cat_scroll11.dds = { colors = 3 category = manmade }
+li_cat_skull_warhammer.dds = { colors = 3 category = figures }
+li_cat_sun_macedonia.dds = { colors = 3 category = nature }
+li_cat_ubisoft_assassins5.dds = { colors = 3 category = abstract }
+li_ce_LC13_nature_tree_elven_02.dds = { colors = 1 category = nature }

@@ -16,9 +16,16 @@ li_kensoriel_liphe = {
 	culture = greek
 	sexuality = heterosexual
 	disallow_random_traits = yes
+	# Habilidades-base 25 (pedido do autor, 11/10/2026); tracos, educacao e modificadores somam por cima
+	diplomacy = 25
+	martial = 25
+	stewardship = 25
+	intrigue = 50
+	learning = 100
+	prowess = 25
 
 
-	trait = education_martial_4
+	trait = education_martial_5
 	trait = just
 	trait = diligent
 	trait = honest
@@ -64,15 +71,22 @@ li_helaena_undomiel = {
 	name = "Helaena"
 	dna = li_helaena_undomiel_dna
 	female = yes
-	dynasty = li_undomiel
+	dynasty = li_liphe # da familia do Kensoriel (decisao de 03/10/2026; a dinastia li_undomiel ficou sem membros)
 	rite = roman_rite
 	culture = greek
 	sexuality = heterosexual
 	disallow_random_traits = yes
+	# Habilidades-base 25 (pedido do autor, 11/10/2026); tracos, educacao e modificadores somam por cima
+	diplomacy = 25
+	martial = 25
+	stewardship = 25
+	intrigue = 25
+	learning = 100
+	prowess = 25
 
 
 	trait = education_diplomacy_5
-	trait = compassionate
+	trait = zealous
 	trait = patient
 	trait = diligent
 	trait = calm
@@ -115,7 +129,7 @@ li_reid_astrea = {
 	trait = fecund
 	trait = pure_blooded
 
-	trait = education_martial_4
+	trait = education_martial_5
 	trait = brave
 	trait = just
 	trait = honest
@@ -222,7 +236,7 @@ li_emhyr_emreis = {
 
 # 04
 li_vistarios_granhieron = {
-	name = "Vistários"
+	name = "li_name_vistarios" # Vistarios (loc em li_dynasties_l_english.yml: acento nao cabe em chave)
 	dna = li_vistarios_granhieron_dna
 	dynasty = li_granhieron
 	rite = roman_rite
@@ -259,7 +273,7 @@ li_vistarios_granhieron = {
 
 # 05
 li_legarde_martyr = {
-	name = "Le'garde"
+	name = "li_name_legarde" # Le garde (loc em li_dynasties_l_english.yml: apostrofo nao cabe em chave)
 	dna = li_legarde_martyr_dna
 	dynasty = li_martyr
 	rite = roman_rite
@@ -347,7 +361,7 @@ li_verso_lumere = {
 	trait = fecund
 	trait = pure_blooded
 
-	trait = education_martial_4
+	trait = education_martial_5
 	trait = brave
 	trait = gregarious
 	trait = ambitious
@@ -373,7 +387,7 @@ li_verso_lumere = {
 
 # 08
 li_altair_ramashiri = {
-	name = "Altaïr"
+	name = "li_name_altair" # Altair (loc em li_dynasties_l_english.yml: trema nao cabe em chave)
 	dna = li_altair_ramashiri_dna
 	dynasty = li_ramashiri
 	rite = roman_rite
@@ -422,7 +436,7 @@ li_sigvardr_drakenfyr = {
 	trait = fecund
 	trait = pure_blooded
 
-	trait = education_martial_4
+	trait = education_martial_5
 	trait = brave
 	trait = wrathful
 	trait = stubborn
@@ -466,7 +480,7 @@ li_miyamoto_musashi = {
 	trait = fecund
 	trait = pure_blooded
 
-	trait = education_martial_4
+	trait = education_martial_5
 	trait = brave
 	trait = patient
 	trait = callous
@@ -723,7 +737,7 @@ li_alia_atreides = {
 	trait = education_learning_5
 	trait = patient
 	trait = ambitious
-	trait = cynical
+	trait = zealous
 	trait = erudite
 	trait = schemer
 	trait = beauty_good_3
@@ -733,7 +747,7 @@ li_alia_atreides = {
 	trait = cautious_leader
 	trait = organizer
 
-	847.1.1 = {
+	849.1.1 = {
 		birth = yes
 		effect = { add_character_flag = do_not_generate_starting_family }
 	}
