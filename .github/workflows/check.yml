@@ -1,0 +1,22 @@
+name: Verificacao do mod
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      # Na main e em PR para a main a decisao de teste ativa reprova; nas outras branches so avisa.
+      - name: BOM, chaves, localizacao e decisao de teste
+        run: |
+          if [ "${{ github.ref }}" = "refs/heads/main" ] || [ "${{ github.base_ref }}" = "main" ]; then
+            python .github/scripts/check_mod.py . --publicacao
+          else
+            python .github/scripts/check_mod.py .
+          fi
